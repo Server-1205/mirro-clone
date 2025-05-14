@@ -1,9 +1,11 @@
-import { BoardPage } from "@/features/board";
+import { AppHeader } from "@/features/header";
+import { Outlet } from "react-router";
 
 export function App() {
   return (
-    <div>
-      <BoardPage />
+    <div className="min-h-screen flex flex-col">
+      <AppHeader />
+      <Outlet />
     </div>
   );
 }
